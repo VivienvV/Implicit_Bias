@@ -11,9 +11,19 @@ Our experiments are carried out in the following notebooks:
 * `gender_proxies.ipynb` contains our experiments with various gender proxies ...
 
 
-To blank out gendered terms from the input text, we use code by Huang et al. which can be found here: https://github.com/tenghaohuang/uncover_implicit_bias. The two specific Python files we use can also be found in the folder `blank_gender`.
+To blank out gendered terms from the input text, we use code by Huang et al. which can be found here: https://github.com/tenghaohuang/uncover_implicit_bias. The two specific Python files we use can also be found in the folder `blank_gender`. The files can be run in the following order:
 
-The file `data_to_json.py` can be used to complete the blanked out ROCStories data with gendered continuations in order to form gender pairs to evaluate. This can be runned as follows :
+1. Classify sentences as having either a male, female, or unresolved gender protagonist
+      ```sh
+      python3 preprocess.py <story_filename.csv>
+      ```
+2. Blank out the gendered terms in male and female sentences
+      
+      ```sh
+      python3 replaceGender.py 
+      ```      
+
+Furthermore, the file `data_to_json.py` can be used to complete the blanked out ROCStories data with gendered continuations in order to form gender pairs to evaluate. This can be runned as follows :
 `python data_to_json.py '[SETTING]' [ID]`
 where `[SETTING]` is the name of the setting, which decides what gender proxy to use (e.g. `'tokenized'` to only use singly tokenized names) and `[ID]` the id of the current dataset. The output will be a file:
 `gender_data_[SETTING]_[ID].json` in the same directory.
