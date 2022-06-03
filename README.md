@@ -11,7 +11,7 @@ Our experiments are carried out in the following notebooks:
 * `gender_proxies.ipnb` contains our experiments with various gender proxies ...
 
 
-To blank out gendered terms from the input text, we use code by Huang et al. which can be found here: https://github.com/tenghaohuang/uncover_implicit_bias. The two specific Python files we use can also be found in the folder "blank_gender"
+To blank out gendered terms from the input text, we use code by Huang et al. which can be found here: https://github.com/tenghaohuang/uncover_implicit_bias. The two specific Python files we use can also be found in the folder `blank_gender`.
 
 The file `data_to_json.py` can be used to complete the blanked out ROCStories data with gendered continuations in order to form gender pairs to evaluate. This can be runned as follows :
 `python data_to_json.py '[SETTING]' [ID]`
