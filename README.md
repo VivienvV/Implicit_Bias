@@ -25,6 +25,10 @@ To blank out gendered terms from the input text, we use code by Huang et al. whi
       python3 replaceGender.py 
       ```      
 
+to create the `namedict.pt` and `namedict_token.pt` files needed to run data `data_to_json.py`, `create_namedict.ipynb` needs to be ran. to do this, you will need to 
+* download `firstnames.xlsx` from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/TYJKEZ and place it in this directory
+* download `names.zip`, unzip the file, and place the resulting directory in this directory.
+
 Furthermore, the file data_to_json.py can be used to complete the blanked out ROCStories data with gendered continuations in order to form gender pairs to evaluate. This can be ran as follows :       
 ```
 python data_to_json.py '[SETTING]' [ID]        
@@ -32,9 +36,7 @@ python data_to_json.py '[SETTING]' [ID]
 where `[SETTING]` is the name of the setting, which decides what gender proxy to use (e.g. 'tokenized' to only use singly tokenized names) and [ID] the id of the current dataset. The output will be a file: `gender_data_[SETTING]_[ID].json` in the same directory.
 In our experiments, we generate 5 versions of each datasettint (ID 0-4), and the datafiles should be placed in the folder `bias_bench/stereoset/data`
 
-to create the `namedict.pt` and `namedict_token.pt` files needed to run data `data_to_json.py`, `create_namedict` needs to be ran. to do this, you will need to 
-* download `firstnames.xlsx` from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/TYJKEZ and place it in this directory
-* download `names.zip`, unzip the file, and place the resulting directory in this directory.
+
  
 
 
