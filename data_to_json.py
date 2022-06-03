@@ -48,7 +48,7 @@ checklist_names['merged']['females'] = editor.lexicons.female
 #################################
 ### names from Mortage dataset###
 #################################
-mortage_names = torch.load('../namedict.pt')
+mortage_names = torch.load('namedict.pt')
 
 #################################
 #### singly tokenized names #####
