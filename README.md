@@ -7,8 +7,8 @@ In this project we evaluate whether we can use the Self-Debiasing technique by S
 Our code is mostly based on the code by Meade et al. (20..). The folder `bias-bench` contains this code, with some small adaptations to our own setup. 
 
 Our experiments are carried out in the following notebooks:
-* `prompt_experiments.ipnb` contains our experiments with prompts
-* `gender_proxies.ipnb` contains our experiments with various gender proxies ...
+* `prompt_experiments.ipynb` contains our experiments with prompts
+* `gender_proxies.ipynb` contains our experiments with various gender proxies ...
 
 
 To blank out gendered terms from the input text, we use code by Huang et al. which can be found here: https://github.com/tenghaohuang/uncover_implicit_bias. The two specific Python files we use can also be found in the folder `blank_gender`.
