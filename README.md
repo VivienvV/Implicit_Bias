@@ -8,7 +8,8 @@ Our code is mostly based on the code by Meade et al. (20..). The folder `bias-be
 
 Our experiments are carried out in the following notebooks:
 * `prompt_experiments.ipynb` contains our experiments with prompts
-* `gender_proxies.ipynb` contains our experiments with various gender proxies * `racial_group_experiments.ipynb` for different racial groups
+* `gender_proxies.ipynb` contains our experiments with various gender proxies 
+* `racial_group_experiments.ipynb` for different racial groups
 * `model_size_experiments.ipynb` for different model_sizes
 
 
