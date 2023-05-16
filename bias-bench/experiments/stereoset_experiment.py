@@ -4,7 +4,7 @@ import os
 
 import transformers
 
-from bias_bench.benchmark.stereoset import StereoSetRunner
+from bias_bench.benchmark.stereoset.stereoset_Oct24 import StereoSetRunner
 from bias_bench.model import models
 from bias_bench.util import generate_experiment_id, _is_generative
 
@@ -106,6 +106,7 @@ if __name__ == "__main__":
         bias_type='gender',
     )
     results = runner()
+    print(results)
 
     os.makedirs(f"{args.persistent_dir}/results/stereoset", exist_ok=True)
     with open(

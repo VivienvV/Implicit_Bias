@@ -118,7 +118,7 @@ class StereoSet(object):
                 )
                 word_idx = None
                 for idx, word in enumerate(example["context"].split(" ")):
-                    if "ProtagonistA" in word:#if "BLANK" in word:
+                    if "BLANK" in word:#if "BLANK" in word:
                         word_idx = idx
                 if word_idx is None:
                     raise Exception("No blank word found.")
